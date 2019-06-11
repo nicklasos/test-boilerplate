@@ -1,0 +1,42 @@
+{
+    "name": "nicklasos/test-boilerplate",
+    "description": "Test",
+    "keywords": [
+        "nicklasos",
+        "test-boilerplate"
+    ],
+    "homepage": "https://github.com/nicklasos/test-boilerplate",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nicklasos",
+            "email": "nicklasos@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nicklasos\\TestBoilerplate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nicklasos\\TestBoilerplate\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
